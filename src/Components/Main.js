@@ -28,7 +28,7 @@ const Main=()=>{
                     <input type="text" placeholder="Enter your book name" value={search} onChange={e=>setSearch(e.target.value)}
                     onKeyPress={searchBook}/>
                     <button> <i class="fa-brands fa-searchengin"></i></button>
-                    <select className="search"defaultValue="Sort" >
+                    <select class="form-select" aria-label="Disabled select example" defaultValue="Sort" >
                         <option disabled value="Sort">Sort</option>
                         <option valu="Newest">Newest</option>
                         <option value="Oldest">Oldest</option>
@@ -38,7 +38,8 @@ const Main=()=>{
             <img src="./images/36865.jpg" alt="background image"/>
             </div>
         </div>
-        <h1 className="row1">Total books Found:{Math.floor(Math.random()*15)}</h1>
+        <div className="row1"><h1>Total books Found:{Math.floor(Math.random()*15)}</h1></div>
+        
         <div className="container">
         {  
     
